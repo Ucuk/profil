@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitas Negeri Makassar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+        <div class="header-container"></div>
+            <div class="logo">
+                <img src="header.png" alt="Logo Universitas Negeri Makassar">
+            </div>
+            <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logoUNM2.png" alt="Logo Universitas Negeri Makassar">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-target="hero"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="profil.html" class="nav-link" id="profilLink"><i class="fas fa-info-circle"></i> Profil</a></li>
+                    <li><a href="kontak.html" class="nav-link" id="kontakLink"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main>
+            <section id="hero" class="content-section active">
+                <h1>Selamat Datang di Halaman Login</h1>
+            </section>
+
+        </main>
+
+        <aside id="loginLogoutBox">
+            <div class="login-box" id="loginBox">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Masuk</button>
+                </form>
+                <p class="forgot-password"><a href="#">Lupa password?</a></p>
+            </div>
+            <div class="logout-box hidden" id="logoutBox">
+                <h2>Selamat Datang</h2>
+                <p id="loggedInUsername"></p>
+                <button id="logoutButton" class="logout-button">Keluar</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Universitas Negeri Makassar</h3>
+                <p>Memberikan pendidikan berkualitas untuk masa depan cerah.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. AP. Pettarani , Makassar</p>
+                <p><i class="fas fa-phone"></i> +6285954770448 </p>
+                <p><i class="fas fa-envelope"></i> m.yusuf17124002.gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                    <!-- <a href="#"><i class="fab fa-telegram"></i></a> -->
+                    <a href="https://t.me/Yusf048"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/mhyusff_"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6285954770448"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024 M. YUSUF. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Styling untuk tombol sosial media */
+.social-contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 100%; /* Memastikan semua tombol memiliki lebar yang sama */
+}
+
+.social-button i {
+    font-size: 24px;
+    margin-right: 12px;
+    width: 24px; /* Memberikan lebar tetap untuk ikon */
+    text-align: center; /* Memastikan ikon berada di tengah */
+}
+
+.social-button span {
+    font-size: 16px;
+    flex: 1; /* Membuat teks mengambil sisa ruang */
+}
+
+/* Telegram button */
+.social-button.telegram {
+    background-color: #0088cc;
+}
+
+.social-button.telegram:hover {
+    background-color: #006699;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* WhatsApp button */
+.social-button.whatsapp {
+    background-color: #25D366;
+}
+
+.social-button.whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Instagram button */
+.social-button.instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.social-button.instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .social-contact-buttons {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .social-button {
+        padding: 10px 20px;
+    }
+
+    .social-button i {
+        font-size: 20px;
+    }
+
+    .social-button span {
+        font-size: 14px;
+    }
+}
